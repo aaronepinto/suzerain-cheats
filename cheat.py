@@ -28,7 +28,7 @@ elif sys.platform.startswith('win32'):
     # Regular Windows
     SAVE_FILE_DIR = Path.home() / 'AppData' / 'LocalLow' / 'Torpor Games' / 'Suzerain'
 else:
-    # Other OS, typically Unix/Linux paths
+    # TODO: Other OS's
     SAVE_FILE_DIR = Path.home() / '.local' / 'share' / 'Torpor Games' / 'Suzerain'
 
     
@@ -55,6 +55,7 @@ KEYS_TO_MODIFY = {
 
 def update_variables(variables_str, keys_to_modify):
     for key, value in keys_to_modify.items():
+        logging.info(f"Updating variable: {key} to {value}")
         search_str = f"[\"{key}\"]="
         index_start = variables_str.find(search_str) + len(search_str)
         index_end = index_start
