@@ -1,0 +1,18 @@
+{
+  "RiziaDLC.Resources_Budget": 25,
+  "RiziaDLC.Resources_Authority": 15,
+  "RiziaDLC.Resources_Energy": 25,
+  "RiziaDLC.Army_Unit_Mountaineer_Total": 25,
+  "RiziaDLC.Army_Unit_GoldenGuard_Total": 25,
+  "RiziaDLC.Army_Unit_Sazon_Total": 25,
+  "RiziaDLC.Army_Unit_Azaro_Total": 25,
+  "RiziaDLC.Army_Unit_Tank_Total": 25,
+  "RiziaDLC.Army_Unit_Paratrooper_Total": 25,
+  "RiziaDLC.Army_Unit_Marine_Total": 25,
+  "RiziaDLC.Army_Unit_Flagship_Total": 25,
+  "RiziaDLC.Army_Unit_Submarine_Total": 25,
+  "RiziaDLC.Army_Unit_Support_Total": 25,
+  "RiziaDLC.Resources_Military_EnemyAirStrikeCount": 0,
+  "RiziaDLC.Resources_Military_AirStrikeRefillPerFragment": 15,
+  "RiziaDLC.War_ActionPoints": 15
+}

@@ -31,27 +31,11 @@ else:
     # TODO: Other OS's
     SAVE_FILE_DIR = Path.home() / '.local' / 'share' / 'Torpor Games' / 'Suzerain'
 
-    
-
-KEYS_TO_MODIFY = {
-    "RiziaDLC.Resources_Budget": 25,
-    "RiziaDLC.Resources_Authority": 15,
-    "RiziaDLC.Resources_Energy": 25,
-    "RiziaDLC.Army_Unit_Mountaineer_Total": 25,
-    "RiziaDLC.Army_Unit_GoldenGuard_Total": 25,
-    "RiziaDLC.Army_Unit_Sazon_Total": 25,
-    "RiziaDLC.Army_Unit_Azaro_Total": 25,
-    "RiziaDLC.Army_Unit_Tank_Total": 25,
-    "RiziaDLC.Army_Unit_Paratrooper_Total": 25,
-    "RiziaDLC.Army_Unit_Marine_Total": 25,
-    "RiziaDLC.Army_Unit_Flagship_Total": 25,
-    "RiziaDLC.Army_Unit_Submarine_Total": 25,
-    "RiziaDLC.Army_Unit_Support_Total": 25,
-    "RiziaDLC.Resources_Military_EnemyAirStrikeCount": 0,
-    "RiziaDLC.Resources_Military_AirStrikeRefillPerFragment": 15,
-    "RiziaDLC.War_ActionPoints": 15,
-    
-}
+try:
+    with open('keys_to_modify.json', 'r') as file:
+        KEYS_TO_MODIFY = json.load(file)
+except FileNotFoundError:
+    logging.error("keys_to_modify.json file not found")
 
 def update_variables(variables_str, keys_to_modify):
     for key, value in keys_to_modify.items():
